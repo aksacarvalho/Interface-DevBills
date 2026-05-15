@@ -1,7 +1,6 @@
 import type { JSX } from "react";
 import Button from "../components/Button";
 import { Wallet, TrendingUp, List, CreditCard } from "lucide-react";
-import { useNavigate } from "react-router";
 
 interface Feature {
   icon: JSX.Element;
@@ -10,9 +9,8 @@ interface Feature {
 }
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const features: ReadonlyArray<Feature> = [
+    
+const features: ReadonlyArray<Feature> = [
     {
       icon: <Wallet className="w-8 h-8 text-primary-700" />,
       title: "Controle Financeiro",
