@@ -9,8 +9,11 @@ interface Feature {
 }
 
 const Home = () => {
-    
-const features: ReadonlyArray<Feature> = [
+  const navigate = (path: string) => {
+    window.location.href = path;
+  };
+
+  const features: ReadonlyArray<Feature> = [
     {
       icon: <Wallet className="w-8 h-8 text-primary-700" />,
       title: "Controle Financeiro",
