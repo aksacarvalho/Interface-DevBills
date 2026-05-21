@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import Button from "../components/Button";
 import { Wallet, TrendingUp, List, CreditCard } from "lucide-react";
+import { useNavigate } from "react-router";
 
 interface Feature {
   icon: JSX.Element;
@@ -9,9 +10,9 @@ interface Feature {
 }
 
 const Home = () => {
-  const navigate = (path: string) => {
-    window.location.href = path;
-  };
+
+
+  const navigate = useNavigate();
 
   const features: ReadonlyArray<Feature> = [
     {

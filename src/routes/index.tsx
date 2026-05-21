@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import Home from "../pages/Home";
 import Login from "../pages/login";
 import { AuthProvider } from "../context/AuthContext";
+import Dashboard from "../pages/Dashboard";
 
 
 
@@ -13,6 +14,8 @@ const AppRoutes = () => {
      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+
         <Route path="*" element={<h2>Página não encontrada</h2>} />
      </Routes>
      </AuthProvider>
