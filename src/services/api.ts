@@ -1,5 +1,5 @@
 import axios, { type AxiosInstance, type InternalAxiosRequestConfig } from "axios"
-import { firebaseAuth } from "../config/firebase";
+import { firebaseAuth } from "../components/config/firebase";
 
 export const api: AxiosInstance = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
