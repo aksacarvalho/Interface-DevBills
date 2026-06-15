@@ -4,7 +4,7 @@ import { getTransactionsMonthly, getTransactionsSummary, } from "../services/tra
 import type { MonthlyItem, TransactionSummary } from "../types/transactions";
 import Card from "../components/Card";
 import { ArrowDown, ArrowUp, Calendar, TrendingUp, Wallet } from "lucide-react";
-import { formatCurrency } from "../utils/formatters";
+import { formatCurrency } from "../utils/formatter";
 import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const initialSummary: TransactionSummary = {
