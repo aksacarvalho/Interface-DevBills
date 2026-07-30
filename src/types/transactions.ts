@@ -3,6 +3,8 @@ import type { Category, CategorySummary } from "./category";
 export type TransactionType = "expense" | "income";
 
 export interface Transaction {
+  INCOME: string;
+  INCOME: string;
   id: string;
   userId: string;
   description: string;
